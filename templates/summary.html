@@ -1,0 +1,56 @@
+<body>
+    {% include "header.html" %}
+    <div class="content-wrapper">
+        <div class="content">
+                    <!-- <div class="l-box">
+                        <h3 class="content-subhead">
+                            What is your TOP film/show favorite genre?
+                        </h3>
+                    </div>
+                    <div class="l-box">
+                        <h3 class="content-subhead">
+                            What is your SECOND film/show favorite genre?
+                        </h3> -->
+                    </div>
+                    <div class="l-box">
+                        <h3 class="content-subhead">
+                            Share your all time favorite movie/show.
+                        </h3>
+                        <h4>Title & Genre</h4>
+                        <p>
+                            <ul>
+                                {% for row in allrows %}
+                                    <li>{{ row.alltimetitle }} / {{ row.alltimegenre }} </li>
+                                {% endfor %}
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="l-box">
+                        <h3 class="content-subhead">
+                            Share any movie/show for people who have same taste with you.
+                        </h3>
+                        <h4>Title & Genre</h4>
+                        <p>
+                            <ul>
+                                {% for row in recrows %}
+                                    <li>{{ row.rectitle }} / {{ row.recgenre }} </li>
+                                {% endfor %}
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="l-box">
+                        <h3 class="content-subhead">
+                            Share any recently watched movie/show.
+                        </h3>
+                        <h4>Title & Genre</h4>
+                        <p>
+                            <ul>
+                                {% for row in tasterows %}
+                                    <li>{{ row.tastetitle }} / {{ row.tastegenre }} </li>
+                                {% endfor %}
+                            </ul>
+                        </p>
+                    </div>
+        </div>
+    </div>
+</body>

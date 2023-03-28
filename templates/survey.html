@@ -1,0 +1,215 @@
+<body>
+    {% include "header.html" %}
+    <div class="content-wrapper">
+        <div class="content">
+            <form class="pure-form pure-form-aligned" action="/survey" method="POST">
+                <fieldset>
+                    <div class="l-box">
+                        <h3 class="content-subhead">
+                            What is your TOP film/show favorite genre?
+                        </h3>
+                        <p>
+                            <label for="genre1" class="pure-radio">
+                                <input type="radio" id="genre1" name="genre" value="action" checked="" /> Action
+                            </label>
+                            <label for="genre2" class="pure-radio">
+                                <input type="radio" id="genre2" name="genre" value="horror" /> Horror
+                            </label>
+                            <label for="genre3" class="pure-radio">
+                                <input type="radio" id="genre3" name="genre" value="drama" /> Drama
+                            </label>                       
+                            <label for="genre4" class="pure-radio">
+                                <input type="radio" id="genre4" name="genre" value="thriller" /> Thriller / Mystery
+                            </label> 
+                            <label for="genre5" class="pure-radio">
+                                <input type="radio" id="genre5" name="genre" value="comedy" /> Comedy
+                            </label> 
+                            <label for="genre6" class="pure-radio">
+                                <input type="radio" id="genre6" name="genre" value="science" /> Science fiction / Superhero
+                            </label> 
+                            <label for="genre7" class="pure-radio">
+                                <input type="radio" id="genre7" name="genre" value="docu" /> Documentary
+                            </label>
+                            <label for="genre8" class="pure-radio">
+                                <input type="radio" id="genre8" name="genre" value="history" /> History
+                            </label>
+                            <label for="genre9" class="pure-radio">
+                                <input type="radio" id="genre9" name="genre" value="fantasy" /> Fantasy
+                            </label>
+                            <label for="genre10" class="pure-radio">
+                                <input type="radio" id="genre10" name="genre" value="romance" /> Romance / Romantic Comedy
+                            </label>
+                            <label for="genre11" class="pure-radio">
+                                <input type="radio" id="genre11" name="genre" value="ani" /> Animation
+                            </label>
+                        </p>
+                    </div>
+                    <div class="l-box">
+                        <h3 class="content-subhead">
+                            What is your SECOND film/show favorite genre?
+                        </h3>
+                        <p>
+                            <label for="secgenre1" class="pure-radio">
+                                <input type="radio" id="secgenre1" name="secgenre" value="action" checked="" /> Action
+                            </label>
+                            <label for="secgenre2" class="pure-radio">
+                                <input type="radio" id="secgenre2" name="secgenre" value="horror" /> Horror
+                            </label>
+                            <label for="secgenre3" class="pure-radio">
+                                <input type="radio" id="secgenre3" name="secgenre" value="drama" /> Drama
+                            </label>                       
+                            <label for="secgenre4" class="pure-radio">
+                                <input type="radio" id="secgenre4" name="secgenre" value="thriller" /> Thriller / Mystery
+                            </label> 
+                            <label for="secgenre5" class="pure-radio">
+                                <input type="radio" id="secgenre5" name="secgenre" value="comedy" /> Comedy
+                            </label> 
+                            <label for="secgenre6" class="pure-radio">
+                                <input type="radio" id="secgenre6" name="secgenre" value="science" /> Science fiction / Superhero
+                            </label> 
+                            <label for="secgenre7" class="pure-radio">
+                                <input type="radio" id="secgenre7" name="secgenre" value="docu" /> Documentary
+                            </label>
+                            <label for="secgenre8" class="pure-radio">
+                                <input type="radio" id="secgenre8" name="secgenre" value="history" /> History
+                            </label>
+                            <label for="secgenre9" class="pure-radio">
+                                <input type="radio" id="secgenre9" name="secgenre" value="fantasy" /> Fantasy
+                            </label>
+                            <label for="secgenre10" class="pure-radio">
+                                <input type="radio" id="secgenre10" name="secgenre" value="romance" /> Romance / Romantic Comedy
+                            </label>
+                            <label for="secgenre11" class="pure-radio">
+                                <input type="radio" id="secgenre11" name="secgenre" value="ani" /> Animation
+                            </label>
+                        </p>
+                    </div>
+                    <div class="l-box">
+                        <h3 class="content-subhead">
+                            Share your all time favorite movie/show.
+                        </h3>
+                        <p>
+                            <div class="pure-control-group">
+                                <input type="text" name="favtitle" placeholder="Title"  required="" />
+                                <span class="pure-form-message-inline">This is a required field.</span>
+                            </div>
+                            <div class="pure-control-group">
+                                <input type="text" name="favgenre" placeholder="Genre" />
+                            </div>
+                            <div class="select-box">
+                                <label for="favrate">How do you rate this movie/show? &nbsp;&nbsp;</label>
+                                <select name="favrate" id="favrate">
+                                    <option value="five">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
+                                    <option value="four">&#9733;&#9733;&#9733;&#9733;&#9734;</option>
+                                    <option value="three">&#9733;&#9733;&#9733;&#9734;&#9734;</option>
+                                    <option value="two">&#9733;&#9733;&#9734;&#9734;&#9734;</option>
+                                    <option value="one">&#9733;&#9734;&#9734;&#9734;&#9734;</option>
+                                </select>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="l-box">
+                        <h3 class="content-subhead">
+                            Share any movie/show for people who have same taste with you.
+                        </h3>
+                        <p>
+                            <div class="pure-control-group">
+                                <input type="text" name="tastitle" placeholder="Title"  required="" />
+                                <span class="pure-form-message-inline">This is a required field.</span>
+                            </div>
+                            <div class="pure-control-group">
+                                <input type="text" name="tasgenre" placeholder="Genre" />
+                            </div>
+                            <div class="select-box">
+                                <label for="tasrate">How do you rate this movie/show? &nbsp;&nbsp;</label>
+                                <select name="tasrate" id="tasrate">
+                                    <option value="five">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
+                                    <option value="four">&#9733;&#9733;&#9733;&#9733;&#9734;</option>
+                                    <option value="three">&#9733;&#9733;&#9733;&#9734;&#9734;</option>
+                                    <option value="two">&#9733;&#9733;&#9734;&#9734;&#9734;</option>
+                                    <option value="one">&#9733;&#9734;&#9734;&#9734;&#9734;</option>
+                                </select>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="l-box">
+                        <h3 class="content-subhead">
+                            Share any recently watched movie/show.
+                        </h3>
+                        <p>
+                            <div class="pure-control-group">
+                                <input type="text" name="rectitle" placeholder="Title" required="" />
+                                <span class="pure-form-message-inline">This is a required field.</span>
+                            </div>
+                            <div class="pure-control-group">
+                                <input type="text" name="recgenre" placeholder="Genre" />
+                            </div>
+                            <div class="select-box">
+                                <label for="recrate">How do you rate this movie/show? &nbsp;&nbsp;</label>
+                                <select name="recrate" id="recrate">
+                                    <option value="five">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
+                                    <option value="four">&#9733;&#9733;&#9733;&#9733;&#9734;</option>
+                                    <option value="three">&#9733;&#9733;&#9733;&#9734;&#9734;</option>
+                                    <option value="two">&#9733;&#9733;&#9734;&#9734;&#9734;</option>
+                                    <option value="one">&#9733;&#9734;&#9734;&#9734;&#9734;</option>
+                                </select>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="l-box">
+                        <h3 class="content-subhead">
+                            Do you subscribe any streaming services? (HBO, Hulu, Netflix, etc.)
+                        </h3>
+                        <p>
+                            <label for="yes" class="pure-radio">
+                                <input type="radio" id="yes" name="ynstream" value="yes" /> Yes
+                            </label>
+                            <label for="no" class="pure-radio">
+                                <input type="radio" id="no" name="ynstream" value="no" /> No
+                            </label>
+                        </p>
+                    </div>
+                    <div class="l-box">
+                        <h3 class="content-subhead">
+                            If you subscribe any streaming services, please select all that apply.
+                        </h3>
+                        <p>
+                            <label for="stream1" class="pure-checkbox">
+                                <input type="checkbox" id="stream1" name="stream" value="hbo" /> HBO Max
+                            </label>
+                            <label for="stream2" class="pure-checkbox">
+                                <input type="checkbox" id="stream2" name="stream" value="netflix" /> Netflix
+                            </label>
+                            <label for="stream3" class="pure-checkbox">
+                                <input type="checkbox" id="stream3" name="stream" value="hulu" /> Hulu
+                            </label>
+                            <label for="stream4" class="pure-checkbox">
+                                <input type="checkbox" id="stream4" name="stream" value="disney" /> Disney+
+                            </label>
+                            <label for="stream5" class="pure-checkbox">
+                                <input type="checkbox" id="stream5" name="stream" value="sling" /> Sling
+                            </label>
+                            <label for="stream6" class="pure-checkbox">
+                                <input type="checkbox" id="stream6" name="stream" value="apple" /> Apple TV+
+                            </label>
+                            <label for="stream7" class="pure-checkbox">
+                                <input type="checkbox" id="stream7" name="stream" value="peacock" /> Peacock
+                            </label>
+                            <label for="stream8" class="pure-checkbox">
+                                <input type="checkbox" id="stream8" name="stream" value="amazon" /> Amazon Prime Video
+                            </label>
+                            <label for="stream9" class="pure-checkbox">
+                                <input type="checkbox" id="stream9" name="stream" value="fubo" /> fubo TV
+                            </label>
+                            <label for="stream10" class="pure-checkbox">
+                                <input type="checkbox" id="stream10" value="nothere" onclick="notInList()" /> Not in the list
+                            </label>
+                            <input type="text" id="streamText" name="stream" style="display:none" placeholder="Type name here" />
+                        </p>
+                    </div>
+                    <input type="submit" class="pure-button pure-button-primary" value="Next" />
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
