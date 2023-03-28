@@ -7,10 +7,10 @@ This full-stack web application is designed to collect survey responses.
 ## Technologies
 
 * Built with
-**Python, Flask, SQL(PostgreSQL), Javascript, HTML/CSS, Jinja, and PureCSS**
+Python, Flask, SQL(PostgreSQL), Javascript, HTML/CSS, Jinja, and PureCSS
 
 * Deployed with
-**Render** (https://render.com/)
+Render (https://render.com/)
 
 
 ## Link to Site
