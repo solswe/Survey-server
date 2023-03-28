@@ -16,4 +16,8 @@ Render (https://render.com/)
 ## Link to Site
 <https://sol-survey.onrender.com/>
 
+* Link to a JSON representation of all collected survey responses:\
+https://sol-survey.onrender.com/api/results
 
+* Link to the collected text responses:\
+https://sol-survey.onrender.com/admin/summary
