@@ -8,6 +8,7 @@ This full-stack web application is designed to collect survey responses.
 <img src="readme/surveyQ1.png">
 <img src="readme/surveyQ2.png">
 <img src="readme/surveyThanks.png">
+<br>
 
 ## Technologies
 
