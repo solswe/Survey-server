@@ -4,6 +4,11 @@
 
 This full-stack web application is designed to collect survey responses.
 
+<img src="readme/surveyMain.png">
+<img src="readme/surveyQ1.png">
+<img src="readme/surveyQ2.png">
+<img src="readme/surveyThanks.png">
+
 ## Technologies
 
 * Built with
@@ -21,3 +26,6 @@ https://sol-survey.onrender.com/api/results
 
 * Link to the collected text responses:\
 https://sol-survey.onrender.com/admin/summary
+
+
+## 
