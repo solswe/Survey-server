@@ -1,4 +1,4 @@
-# Servey server
+# Servey server "What U Watch"
 
 ## About the project
 
